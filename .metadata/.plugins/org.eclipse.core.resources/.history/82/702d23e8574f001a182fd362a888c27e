@@ -1,0 +1,13 @@
+package lv.renate.employee;
+
+import lv.renate.paysystem.Payee
+
+public class SalaryEmployee implements Payee {
+	
+	private String name;
+	private Integer bankAccount
+	protected Double grossWage;
+	
+	
+	
+}
