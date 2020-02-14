@@ -1,0 +1,5 @@
+package lv.renate.employee;
+
+public class SalaryEmployee implements Payee {
+
+}
