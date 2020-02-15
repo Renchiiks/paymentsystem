@@ -1,5 +1,0 @@
-package lv.renate.paysystem;
-
-public interface Payee {
-
-}

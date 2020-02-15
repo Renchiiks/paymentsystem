@@ -1,0 +1,16 @@
+package lv.renate.test;
+
+import lv.renate.employee.CommissioinEmployee;
+import lv.renate.paysystem.PaymentSystem;
+
+public class TestPayment {
+
+	
+	public static void main(String[] args) {
+		PaymentSystem paymentSystem = new PaymentSystem();
+		CommissioinEmployee toms = new CommissioinEmployee("Toms Ozolins", 101001010, 5000.0);
+		CommissioinEmployee ieva = new CommissioinEmployee("Ieva Berzina", 101005010, 5600.0);
+
+	}
+
+}

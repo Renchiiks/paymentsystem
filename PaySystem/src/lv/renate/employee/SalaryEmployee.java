@@ -1,34 +1,25 @@
 package lv.renate.employee;
 
-import lv.renate.paysystem.Payee;
 
-public class SalaryEmployee implements Payee {
-	
-	private String name;
-	private Integer bankAccount;
-	protected Double grossWage;
+
+public class SalaryEmployee extends Employee {
+
 	public SalaryEmployee(String name, Integer bankAccount, Double grossWage) {
-		super();
-		this.name = name;
-		this.bankAccount = bankAccount;
-		this.grossWage = grossWage;
+		super(name, bankAccount, grossWage);
+
 	}
-	@Override
-	public String name() {
-		// TODO Auto-generated method stub
-		return name;
-	}
+
 	@Override
 	public Double grossPayment() {
-		// TODO Auto-generated method stub
-		return grossWage;
+
+		return grossWage +doCurrantBonus();
 	}
+
 	@Override
-	public Integer bankAccount() {
-		// TODO Auto-generated method stub
-		return bankAccount;
+	public void giveBonus(Double precentage) {
+		currantBonuss += grossWage *(precentage/100.00);
+		
 	}
 	
-	
-	
+
 }
